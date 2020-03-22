@@ -9,13 +9,13 @@ def position_taken?(board,position)
 return taken
 
 end
-  
+
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 def valid_move?(board,position)
   valid = true
   if position<=0 || position > 9
     valid = false
-  else 
+  else
     case position_taken?(board,position)
     when true
       valid = false
@@ -26,6 +26,3 @@ def valid_move?(board,position)
 
   return valid
 end
-
-    
-  
