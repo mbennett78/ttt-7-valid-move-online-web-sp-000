@@ -16,10 +16,10 @@ def valid_move?(board,position)
   valid = nil
   if position >= 0 && position <=8
     case position_taken?(board,position)
-    when true
-      valid = false
-    when false
-      valid = true
+       when true
+        valid = false
+       when false
+        valid = true
     end
   end
 
