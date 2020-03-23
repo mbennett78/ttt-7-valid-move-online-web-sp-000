@@ -14,7 +14,7 @@ end
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 def valid_move?(board,position)
   valid = nil
-  if position >= 1 && position <=9
+  if position >= 0 && position <=8
     case position_taken?(board,position)
     when true
       valid = false
